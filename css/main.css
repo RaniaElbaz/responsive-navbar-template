@@ -12,10 +12,13 @@ a{
     color: #fff;
     text-decoration: none;
 }
+ul{
+    list-style-type: none;
+}
 /*******************************************************/
 nav{
     background-color: #0b3545;
-    padding: 2% 10%;
+    padding: 10px 100px;
 }
 .logo{
     float: left;
@@ -41,9 +44,21 @@ a:hover {
 }
 .bars{
     color: #fff;
-    display: none !important;
+    display: none;
     font-size: 25px;
     margin: 15px 0;
+}
+.dropdown{
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #156686b7;
+    display: none;
+}
+.dropdown-item{
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 5px;
 }
 /*********************************************************/
 @media (max-width: 768px) {
@@ -68,7 +83,7 @@ a:hover {
         border-bottom: 1px solid #f2f2f28f;
     }
     .bars{
-        display: block !important;
+        display: block;
         float: right;
     }
     .resp-list{
@@ -78,5 +93,12 @@ a:hover {
         display: inline-block !important;
         font-size: 25px;
         margin-right: 10px;
+    }
+    .dropdown{
+        position: static;
+        text-align: left;
+        padding: 5px 0 5px 38px;
+        background-color: transparent;
+        display: none;
     }
 }

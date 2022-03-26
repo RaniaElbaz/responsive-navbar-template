@@ -11,39 +11,64 @@
         <nav>
           <div class="logo">
             <a href="#"><img src="img/logo.svg" alt="logo"></a>
-            <i class="fa-solid fa-bars bars"></i>
+            <div class="bars">
+              <i class="fa-solid fa-bars"></i>
+            </div>
             <div class="clear"></div>
           </div>
-          <div class="link-list">
-            <a href="#home" class="link-item">
-              <i class="fa-solid fa-house home" id="icon"></i>
-              <span class="link-text">Home</span>
-            </a>
-            <a href="#about" class="link-item"> 
-              <i class="fa-solid fa-id-card id" id="icon"></i> 
-              <span class="link-text">About</span> 
-            </a>
-            <a href="#project" class="link-item">
-              <i class="fa-solid fa-folder-open folder" id="icon"></i>
-              <span class="link-text">Projects</span> 
-            </a>
-            <a href="#service" class="link-item">
-              <i class="fa-solid fa-bell-concierge bell" id="icon"></i>
-              <span class="link-text">Service</span> 
-            </a>
-            <a href="#review" class="link-item">
-              <i class="fa-solid fa-star star" id="icon"></i>
-              <span class="link-text">Review</span> 
-            </a>
-            <a href="#contact" class="link-item">
-              <i class="fa-solid fa-envelope mail" id="icon"></i>
-              <span class="link-text">Contact</span> 
-            </a>
-          </div>
+          <ul class="link-list">
+            <li class="link-item">
+              <a href="#home">
+                <i class="fa-solid fa-house home" id="icon"></i>
+                <span class="link-text">Home</span>
+              </a>
+            </li>
+            <li class="link-item">
+              <a href="#about"> 
+                <i class="fa-solid fa-id-card id" id="icon"></i> 
+                <span class="link-text">About</span> 
+              </a>
+            </li>
+            <li class="link-item">
+              <a href="#project">
+                <i class="fa-solid fa-folder-open folder" id="icon"></i>
+                <span class="link-text">Projects</span> 
+              </a>
+            </li>
+            <li class="link-item">
+              <a href="#service" class="service">
+                <i class="fa-solid fa-bell-concierge bell" id="icon"></i>
+                <span class="link-text">Service</span> 
+              </a>
+              <ul class="dropdown">
+                <li class="dropdown-item">
+                  <a href="#"> Service 1 </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#"> Service 2 </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#"> Service 3 </a>
+                </li>
+              </ul>
+            </li>
+            <li class="link-item">
+              <a href="#review">
+                <i class="fa-solid fa-star star" id="icon"></i>
+                <span class="link-text">Review</span> 
+              </a>
+            </li>
+            <li class="link-item">
+              <a href="#contact">
+                <i class="fa-solid fa-envelope mail" id="icon"></i>
+                <span class="link-text">Contact</span> 
+              </a>
+            </li>
+          </ul>
           <div class="clear"></div>
         </nav>
         
-        
+        <script src="https://kit.fontawesome.com/a3282cda9b.js" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
